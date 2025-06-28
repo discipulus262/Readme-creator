@@ -13,7 +13,7 @@ fn main() {
     io::stdin().read_line(&mut code).expect("too bad, you did something wrong");
 
 
-    let finalmd = format!("#{} \n \n{} \n \nhere is some example code: \n``` \n{} \n```", name, desc, code);
+    let finalmd = format!("# {} \n \n{} \n \nhere is some example code: \n``` \n{} \n```", name, desc, code);
     
     println!("writing to test.md: {}", finalmd);
     file.write_all(finalmd.as_bytes()).expect("failed to write to file");
