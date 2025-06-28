@@ -1,5 +1,6 @@
 use std::{fs, io, io::prelude::*};
 fn main() {
+
     let mut name = String::new();
     let mut desc = String::new();
     let mut file = fs::File::create("test.md").expect("failed to create file");
